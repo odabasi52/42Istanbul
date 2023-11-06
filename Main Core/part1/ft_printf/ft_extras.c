@@ -54,19 +54,6 @@ int	ft_putnbr(long long n, int len, char c)
 	return (len);
 }
 
-int	hex_len(uintptr_t num)
-{
-	int	i;
-
-	i = 0;
-	while (num)
-	{
-		num /= 10;
-		i++;
-	}
-	return (i);
-}
-
 int	ft_print_hex(unsigned int num, char c, int len)
 {
 	char	*base;
